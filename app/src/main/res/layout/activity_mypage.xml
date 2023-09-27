@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="7"
+        android:layout_marginTop="38dp"
+        >
+
+        <TextView
+            android:id="@+id/myevent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY EVENT"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="10dp"
+            />
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="로그아웃" />
+    </LinearLayout>
+    <View
+        android:background="#808080"
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사고"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2022년 6월 28일"
+            android:textSize="20dp"
+            android:layout_marginTop="3dp"
+            />
+        <TextView
+            android:id="@+id/exe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="설명 : 화재 발생"
+            android:textSize="20dp"
+            android:layout_marginTop="3dp"
+            />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/fire"
+            android:layout_marginTop="3dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:gravity="right"
+        android:paddingTop="10dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="&#x21E6;"
+            android:textSize = "20sp" />
+    </LinearLayout>
+</LinearLayout>
